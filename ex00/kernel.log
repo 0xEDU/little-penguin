@@ -1,0 +1,463 @@
+Sep  1 00:16:56 etachott kernel: Linux version 6.17.0-rc4-little-penguin (root@etachott) (gcc (GCC) 14.2.0, GNU ld (GNU Binutils) 2.44) #1 SMP PREEMPT_DYNAMIC Mon Sep  1 00:13:49 -03 2025
+Sep  1 00:16:56 etachott kernel: Command line: BOOT_IMAGE=/vmlinuz-6.17.0-rc4-test-kernel root=/dev/sda5 ro
+Sep  1 00:16:56 etachott kernel: BIOS-provided physical RAM map:
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Sep  1 00:16:56 etachott kernel: BIOS-e820: [mem 0x0000000100000000-0x000000029bdfffff] usable
+Sep  1 00:16:56 etachott kernel: NX (Execute Disable) protection: active
+Sep  1 00:16:56 etachott kernel: APIC: Static calls initialized
+Sep  1 00:16:56 etachott kernel: SMBIOS 2.5 present.
+Sep  1 00:16:56 etachott kernel: DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Sep  1 00:16:56 etachott kernel: DMI: Memory slots populated: 0/0
+Sep  1 00:16:56 etachott kernel: Hypervisor detected: KVM
+Sep  1 00:16:56 etachott kernel: kvm-clock: Using msrs 4b564d01 and 4b564d00
+Sep  1 00:16:56 etachott kernel: kvm-clock: using sched offset of 762913323327 cycles
+Sep  1 00:16:56 etachott kernel: clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Sep  1 00:16:56 etachott kernel: tsc: Detected 3494.398 MHz processor
+Sep  1 00:16:56 etachott kernel: e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Sep  1 00:16:56 etachott kernel: e820: remove [mem 0x000a0000-0x000fffff] usable
+Sep  1 00:16:56 etachott kernel: last_pfn = 0x29be00 max_arch_pfn = 0x400000000
+Sep  1 00:16:56 etachott kernel: MTRR map: 3 entries (3 fixed + 0 variable; max 19), built from 8 variable MTRRs
+Sep  1 00:16:56 etachott kernel: x86/PAT: Configuration [0-7]: WB  WC  UC- UC  WB  WP  UC- WT  
+Sep  1 00:16:56 etachott kernel: CPU MTRRs all blank - virtualized system.
+Sep  1 00:16:56 etachott kernel: last_pfn = 0xe0000 max_arch_pfn = 0x400000000
+Sep  1 00:16:56 etachott kernel: found SMP MP-table at [mem 0x0009fbf0-0x0009fbff]
+Sep  1 00:16:56 etachott kernel: ACPI: Early table checksum verification disabled
+Sep  1 00:16:56 etachott kernel: ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Sep  1 00:16:56 etachott kernel: ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Sep  1 00:16:56 etachott kernel: ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Sep  1 00:16:56 etachott kernel: ACPI: DSDT 0x00000000DFFF0660 002353 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Sep  1 00:16:56 etachott kernel: ACPI: FACS 0x00000000DFFF0200 000040
+Sep  1 00:16:56 etachott last message buffered 1 times
+Sep  1 00:16:56 etachott kernel: ACPI: APIC 0x00000000DFFF0240 0000AC (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Sep  1 00:16:56 etachott kernel: ACPI: SSDT 0x00000000DFFF02F0 00036C (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Sep  1 00:16:56 etachott kernel: ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+Sep  1 00:16:56 etachott kernel: ACPI: Reserving DSDT table memory at [mem 0xdfff0660-0xdfff29b2]
+Sep  1 00:16:56 etachott kernel: ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Sep  1 00:16:56 etachott last message buffered 1 times
+Sep  1 00:16:56 etachott kernel: ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff02eb]
+Sep  1 00:16:56 etachott kernel: ACPI: Reserving SSDT table memory at [mem 0xdfff02f0-0xdfff065b]
+Sep  1 00:16:56 etachott kernel: No NUMA configuration found
+Sep  1 00:16:56 etachott kernel: Faking a node at [mem 0x0000000000000000-0x000000029bdfffff]
+Sep  1 00:16:56 etachott kernel: NODE_DATA(0) allocated [mem 0x29bdf7900-0x29bdfafff]
+Sep  1 00:16:56 etachott kernel: Zone ranges:
+Sep  1 00:16:56 etachott kernel:   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Sep  1 00:16:56 etachott kernel:   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Sep  1 00:16:56 etachott kernel:   Normal   [mem 0x0000000100000000-0x000000029bdfffff]
+Sep  1 00:16:56 etachott kernel: Movable zone start for each node
+Sep  1 00:16:56 etachott kernel: Early memory node ranges
+Sep  1 00:16:56 etachott kernel:   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Sep  1 00:16:56 etachott kernel:   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+Sep  1 00:16:56 etachott kernel:   node   0: [mem 0x0000000100000000-0x000000029bdfffff]
+Sep  1 00:16:56 etachott kernel: Initmem setup node 0 [mem 0x0000000000001000-0x000000029bdfffff]
+Sep  1 00:16:56 etachott kernel: On node 0, zone DMA: 1 pages in unavailable ranges
+Sep  1 00:16:56 etachott kernel: On node 0, zone DMA: 97 pages in unavailable ranges
+Sep  1 00:16:56 etachott kernel: On node 0, zone Normal: 16 pages in unavailable ranges
+Sep  1 00:16:56 etachott kernel: On node 0, zone Normal: 16896 pages in unavailable ranges
+Sep  1 00:16:56 etachott kernel: ACPI: PM-Timer IO Port: 0x4008
+Sep  1 00:16:56 etachott kernel: IOAPIC[0]: apic_id 12, version 32, address 0xfec00000, GSI 0-23
+Sep  1 00:16:56 etachott kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Sep  1 00:16:56 etachott kernel: ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Sep  1 00:16:56 etachott kernel: ACPI: Using ACPI (MADT) for SMP configuration information
+Sep  1 00:16:56 etachott kernel: CPU topo: Max. logical packages:   1
+Sep  1 00:16:56 etachott kernel: CPU topo: Max. logical dies:       1
+Sep  1 00:16:56 etachott kernel: CPU topo: Max. dies per package:   1
+Sep  1 00:16:56 etachott kernel: CPU topo: Max. threads per core:   1
+Sep  1 00:16:56 etachott kernel: CPU topo: Num. cores per package:    12
+Sep  1 00:16:56 etachott kernel: CPU topo: Num. threads per package:  12
+Sep  1 00:16:56 etachott kernel: CPU topo: Allowing 12 present CPUs plus 0 hotplug CPUs
+Sep  1 00:16:56 etachott kernel: PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Sep  1 00:16:56 etachott kernel: PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x000fffff]
+Sep  1 00:16:56 etachott kernel: PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xffffffff]
+Sep  1 00:16:56 etachott kernel: [mem 0xe0000000-0xfebfffff] available for PCI devices
+Sep  1 00:16:56 etachott kernel: Booting paravirtualized kernel on KVM
+Sep  1 00:16:56 etachott kernel: clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1910969940391419 ns
+Sep  1 00:16:56 etachott kernel: setup_percpu: NR_CPUS:64 nr_cpumask_bits:12 nr_cpu_ids:12 nr_node_ids:1
+Sep  1 00:16:56 etachott kernel: percpu: Embedded 52 pages/cpu s172760 r8192 d32040 u262144
+Sep  1 00:16:56 etachott kernel: pcpu-alloc: s172760 r8192 d32040 u262144 alloc=1*2097152
+Sep  1 00:16:56 etachott kernel: pcpu-alloc: [0] 00 01 02 03 04 05 06 07 [0] 08 09 10 11 -- -- -- -- 
+Sep  1 00:16:56 etachott kernel: Kernel command line: BOOT_IMAGE=/vmlinuz-6.17.0-rc4-test-kernel root=/dev/sda5 ro
+Sep  1 00:16:56 etachott kernel: Unknown kernel command line parameters "BOOT_IMAGE=/vmlinuz-6.17.0-rc4-test-kernel", will be passed to user space.
+Sep  1 00:16:56 etachott kernel: random: crng init done
+Sep  1 00:16:56 etachott kernel: printk: log buffer data + meta data: 262144 + 917504 = 1179648 bytes
+Sep  1 00:16:56 etachott kernel: Dentry cache hash table entries: 2097152 (order: 12, 16777216 bytes, linear)
+Sep  1 00:16:56 etachott kernel: Inode-cache hash table entries: 1048576 (order: 11, 8388608 bytes, linear)
+Sep  1 00:16:56 etachott kernel: software IO TLB: area num 16.
+Sep  1 00:16:56 etachott kernel: Fallback order for Node 0: 0 
+Sep  1 00:16:56 etachott kernel: Built 1 zonelists, mobility grouping on.  Total pages: 2604430
+Sep  1 00:16:56 etachott kernel: Policy zone: Normal
+Sep  1 00:16:56 etachott kernel: mem auto-init: stack:all(zero), heap alloc:off, heap free:off
+Sep  1 00:16:56 etachott kernel: SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=12, Nodes=1
+Sep  1 00:16:56 etachott kernel: Dynamic Preempt: voluntary
+Sep  1 00:16:56 etachott kernel: rcu: Preemptible hierarchical RCU implementation.
+Sep  1 00:16:56 etachott kernel: rcu: \x09RCU event tracing is enabled.
+Sep  1 00:16:56 etachott kernel: rcu: \x09RCU restricting CPUs from NR_CPUS=64 to nr_cpu_ids=12.
+Sep  1 00:16:56 etachott kernel: \x09Trampoline variant of Tasks RCU enabled.
+Sep  1 00:16:56 etachott kernel: \x09Tracing variant of Tasks RCU enabled.
+Sep  1 00:16:56 etachott kernel: rcu: RCU calculated value of scheduler-enlistment delay is 100 jiffies.
+Sep  1 00:16:56 etachott kernel: rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=12
+Sep  1 00:16:56 etachott kernel: RCU Tasks: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=12.
+Sep  1 00:16:56 etachott kernel: RCU Tasks Trace: Setting shift to 4 and lim to 1 rcu_task_cb_adjust=1 rcu_task_cpu_ids=12.
+Sep  1 00:16:56 etachott kernel: NR_IRQS: 4352, nr_irqs: 520, preallocated irqs: 16
+Sep  1 00:16:56 etachott kernel: rcu: srcu_init: Setting srcu_struct sizes based on contention.
+Sep  1 00:16:56 etachott kernel: Console: colour dummy device 80x25
+Sep  1 00:16:56 etachott kernel: printk: legacy console [tty0] enabled
+Sep  1 00:16:56 etachott kernel: ACPI: Core revision 20250404
+Sep  1 00:16:56 etachott kernel: APIC: Switch to symmetric I/O mode setup
+Sep  1 00:16:56 etachott kernel: ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Sep  1 00:16:56 etachott kernel: clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x325ea4cf831, max_idle_ns: 440795248593 ns
+Sep  1 00:16:56 etachott kernel: Calibrating delay loop (skipped) preset value.. 6988.79 BogoMIPS (lpj=3494398)
+Sep  1 00:16:56 etachott kernel: Last level iTLB entries: 4KB 0, 2MB 0, 4MB 0
+Sep  1 00:16:56 etachott kernel: Last level dTLB entries: 4KB 0, 2MB 0, 4MB 0, 1GB 0
+Sep  1 00:16:56 etachott kernel: mitigations: Enabled attack vectors: user_kernel, user_user, SMT mitigations: auto
+Sep  1 00:16:56 etachott kernel: Speculative Store Bypass: Vulnerable
+Sep  1 00:16:56 etachott kernel: Spectre V2 : Mitigation: Enhanced / Automatic IBRS
+Sep  1 00:16:56 etachott kernel: RETBleed: Mitigation: Enhanced IBRS
+Sep  1 00:16:56 etachott kernel: ITS: Mitigation: Aligned branch/return thunks
+Sep  1 00:16:56 etachott kernel: Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Sep  1 00:16:56 etachott kernel: Spectre V2 : Spectre v2 / PBRSB-eIBRS: Retire a single CALL on VMEXIT
+Sep  1 00:16:56 etachott kernel: active return thunk: its_return_thunk
+Sep  1 00:16:56 etachott kernel: x86/fpu: x87 FPU will use FXSAVE
+Sep  1 00:16:56 etachott kernel: Freeing SMP alternatives memory: 56K
+Sep  1 00:16:56 etachott kernel: pid_max: default: 32768 minimum: 301
+Sep  1 00:16:56 etachott kernel: LSM: initializing lsm=capability,selinux
+Sep  1 00:16:56 etachott kernel: SELinux:  Initializing.
+Sep  1 00:16:56 etachott kernel: Mount-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Sep  1 00:16:56 etachott kernel: Mountpoint-cache hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Sep  1 00:16:56 etachott kernel: APIC calibration not consistent with PM-Timer: 102ms instead of 100ms
+Sep  1 00:16:56 etachott kernel: APIC delta adjusted to PM-Timer: 6253717 (6381830)
+Sep  1 00:16:56 etachott kernel: smpboot: CPU0: Intel(R) Core(TM) i5-14600K (family: 0x6, model: 0xb7, stepping: 0x1)
+Sep  1 00:16:56 etachott kernel: Performance Events: unsupported CPU family 6 model 183 no PMU driver, software events only.
+Sep  1 00:16:56 etachott kernel: signal: max sigframe size: 1440
+Sep  1 00:16:56 etachott kernel: rcu: Hierarchical SRCU implementation.
+Sep  1 00:16:56 etachott kernel: rcu: \x09Max phase no-delay instances is 400.
+Sep  1 00:16:56 etachott kernel: Timer migration: 2 hierarchy levels; 8 children per group; 2 crossnode level
+Sep  1 00:16:56 etachott kernel: smp: Bringing up secondary CPUs ...
+Sep  1 00:16:56 etachott kernel: smpboot: x86: Booting SMP configuration:
+Sep  1 00:16:56 etachott kernel: .... node  #0, CPUs:        #1  #2  #3  #4  #5  #6  #7  #8  #9 #10 #11
+Sep  1 00:16:56 etachott kernel: smp: Brought up 1 node, 12 CPUs
+Sep  1 00:16:56 etachott kernel: smpboot: Total of 12 processors activated (83865.55 BogoMIPS)
+Sep  1 00:16:56 etachott kernel: Memory: 10106460K/10417720K available (18950K kernel code, 2900K rwdata, 7532K rodata, 2836K init, 2580K bss, 301048K reserved, 0K cma-reserved)
+Sep  1 00:16:56 etachott kernel: devtmpfs: initialized
+Sep  1 00:16:56 etachott kernel: clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 1911260446275000 ns
+Sep  1 00:16:56 etachott kernel: posixtimers hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Sep  1 00:16:56 etachott kernel: futex hash table entries: 4096 (262144 bytes on 1 NUMA nodes, total 256 KiB, linear).
+Sep  1 00:16:56 etachott kernel: PM: RTC time: 03:16:57, date: 2025-09-01
+Sep  1 00:16:56 etachott kernel: NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Sep  1 00:16:56 etachott kernel: audit: initializing netlink subsys (disabled)
+Sep  1 00:16:56 etachott kernel: audit: type=2000 audit(1756697382.717:1): state=initialized audit_enabled=0 res=1
+Sep  1 00:16:56 etachott kernel: thermal_sys: Registered thermal governor 'step_wise'
+Sep  1 00:16:56 etachott kernel: thermal_sys: Registered thermal governor 'user_space'
+Sep  1 00:16:56 etachott kernel: cpuidle: using governor menu
+Sep  1 00:16:56 etachott kernel: PCI: Using configuration type 1 for base access
+Sep  1 00:16:56 etachott kernel: kprobes: kprobe jump-optimization is enabled. All kprobes are optimized if possible.
+Sep  1 00:16:56 etachott kernel: HugeTLB: allocation took 0ms with hugepage_allocation_threads=3
+Sep  1 00:16:56 etachott kernel: HugeTLB: registered 2.00 MiB page size, pre-allocated 0 pages
+Sep  1 00:16:56 etachott kernel: HugeTLB: 28 KiB vmemmap can be freed for a 2.00 MiB page
+Sep  1 00:16:56 etachott kernel: ACPI: Added _OSI(Module Device)
+Sep  1 00:16:56 etachott kernel: ACPI: Added _OSI(Processor Device)
+Sep  1 00:16:56 etachott kernel: ACPI: Added _OSI(Processor Aggregator Device)
+Sep  1 00:16:56 etachott kernel: ACPI: 2 ACPI AML tables successfully acquired and loaded
+Sep  1 00:16:56 etachott kernel: ACPI: Interpreter enabled
+Sep  1 00:16:56 etachott kernel: ACPI: PM: (supports S0 S5)
+Sep  1 00:16:56 etachott kernel: ACPI: Using IOAPIC for interrupt routing
+Sep  1 00:16:56 etachott kernel: PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Sep  1 00:16:56 etachott kernel: PCI: Using E820 reservations for host bridge windows
+Sep  1 00:16:56 etachott kernel: ACPI: Enabled 2 GPEs in block 00 to 07
+Sep  1 00:16:56 etachott kernel: ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Sep  1 00:16:56 etachott kernel: acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI HPX-Type3]
+Sep  1 00:16:56 etachott kernel: acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Sep  1 00:16:56 etachott kernel: acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended configuration space under this bridge
+Sep  1 00:16:56 etachott kernel: PCI host bridge to bus 0000:00
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: root bus resource [bus 00-ff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:00.0: [8086:1237] type 00 class 0x060000 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.0: [8086:7000] type 00 class 0x060100 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.1: BAR 4 [io  0xd000-0xd00f]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.1: BAR 0 [io  0x01f0-0x01f7]: legacy IDE quirk
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.1: BAR 1 [io  0x03f6]: legacy IDE quirk
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.1: BAR 2 [io  0x0170-0x0177]: legacy IDE quirk
+Sep  1 00:16:56 etachott kernel: pci 0000:00:01.1: BAR 3 [io  0x0376]: legacy IDE quirk
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: BAR 0 [io  0xd010-0xd01f]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: BAR 1 [mem 0xe0000000-0xe0ffffff pref]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: BAR 2 [mem 0xf0000000-0xf01fffff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:03.0: [8086:100e] type 00 class 0x020000 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:03.0: BAR 0 [mem 0xf0200000-0xf021ffff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:03.0: BAR 2 [io  0xd020-0xd027]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:04.0: BAR 0 [io  0xd040-0xd05f]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:04.0: BAR 1 [mem 0xf0400000-0xf07fffff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:04.0: BAR 2 [mem 0xf0800000-0xf0803fff pref]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:05.0: [8086:2415] type 00 class 0x040100 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:05.0: BAR 0 [io  0xd100-0xd1ff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:05.0: BAR 1 [io  0xd200-0xd23f]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:06.0: BAR 0 [mem 0xf0804000-0xf0804fff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:07.0: [8086:7113] type 00 class 0x068000 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Sep  1 00:16:56 etachott kernel: pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0b.0: [8086:265c] type 00 class 0x0c0320 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0b.0: BAR 0 [mem 0xf0805000-0xf0805fff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601 conventional PCI endpoint
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: BAR 0 [io  0xd240-0xd247]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: BAR 1 [io  0xd248-0xd24b]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: BAR 2 [io  0xd250-0xd257]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: BAR 3 [io  0xd258-0xd25b]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: BAR 4 [io  0xd260-0xd26f]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:0d.0: BAR 5 [mem 0xf0806000-0xf0807fff]
+Sep  1 00:16:56 etachott kernel: ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Sep  1 00:16:56 etachott kernel: ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Sep  1 00:16:56 etachott kernel: ACPI: PCI: Interrupt link LNKC configured for IRQ 9
+Sep  1 00:16:56 etachott kernel: ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Sep  1 00:16:56 etachott kernel: iommu: Default domain type: Translated
+Sep  1 00:16:56 etachott kernel: iommu: DMA domain TLB invalidation policy: lazy mode
+Sep  1 00:16:56 etachott kernel: SCSI subsystem initialized
+Sep  1 00:16:56 etachott kernel: libata version 3.00 loaded.
+Sep  1 00:16:56 etachott kernel: ACPI: bus type USB registered
+Sep  1 00:16:56 etachott kernel: usbcore: registered new interface driver usbfs
+Sep  1 00:16:56 etachott kernel: usbcore: registered new interface driver hub
+Sep  1 00:16:56 etachott kernel: usbcore: registered new device driver usb
+Sep  1 00:16:56 etachott kernel: pps_core: LinuxPPS API ver. 1 registered
+Sep  1 00:16:56 etachott kernel: pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Sep  1 00:16:56 etachott kernel: PTP clock support registered
+Sep  1 00:16:56 etachott kernel: Advanced Linux Sound Architecture Driver Initialized.
+Sep  1 00:16:56 etachott kernel: NetLabel: Initializing
+Sep  1 00:16:56 etachott kernel: NetLabel:  domain hash size = 128
+Sep  1 00:16:56 etachott kernel: NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Sep  1 00:16:56 etachott kernel: NetLabel:  unlabeled traffic allowed by default
+Sep  1 00:16:56 etachott kernel: PCI: Using ACPI for IRQ routing
+Sep  1 00:16:56 etachott kernel: PCI: pci_cache_line_size set to 64 bytes
+Sep  1 00:16:56 etachott kernel: e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Sep  1 00:16:56 etachott kernel: e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+Sep  1 00:16:56 etachott kernel: e820: reserve RAM buffer [mem 0x29be00000-0x29bffffff]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: vgaarb: bridge control possible
+Sep  1 00:16:56 etachott kernel: pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Sep  1 00:16:56 etachott kernel: vgaarb: loaded
+Sep  1 00:16:56 etachott kernel: clocksource: Switched to clocksource kvm-clock
+Sep  1 00:16:56 etachott kernel: VFS: Disk quotas dquot_6.6.0
+Sep  1 00:16:56 etachott kernel: VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Sep  1 00:16:56 etachott kernel: pnp: PnP ACPI init
+Sep  1 00:16:56 etachott kernel: pnp: PnP ACPI: found 2 devices
+Sep  1 00:16:56 etachott kernel: clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Sep  1 00:16:56 etachott kernel: NET: Registered PF_INET protocol family
+Sep  1 00:16:56 etachott kernel: IP idents hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Sep  1 00:16:56 etachott kernel: tcp_listen_portaddr_hash hash table entries: 8192 (order: 5, 131072 bytes, linear)
+Sep  1 00:16:56 etachott kernel: Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Sep  1 00:16:56 etachott kernel: TCP established hash table entries: 131072 (order: 8, 1048576 bytes, linear)
+Sep  1 00:16:56 etachott kernel: TCP bind hash table entries: 65536 (order: 9, 2097152 bytes, linear)
+Sep  1 00:16:56 etachott kernel: TCP: Hash tables configured (established 131072 bind 65536)
+Sep  1 00:16:56 etachott kernel: UDP hash table entries: 8192 (order: 7, 524288 bytes, linear)
+Sep  1 00:16:56 etachott kernel: UDP-Lite hash table entries: 8192 (order: 7, 524288 bytes, linear)
+Sep  1 00:16:56 etachott kernel: NET: Registered PF_UNIX/PF_LOCAL protocol family
+Sep  1 00:16:56 etachott kernel: RPC: Registered named UNIX socket transport module.
+Sep  1 00:16:56 etachott kernel: RPC: Registered udp transport module.
+Sep  1 00:16:56 etachott kernel: RPC: Registered tcp transport module.
+Sep  1 00:16:56 etachott kernel: RPC: Registered tcp-with-tls transport module.
+Sep  1 00:16:56 etachott kernel: RPC: Registered tcp NFSv4.1 backchannel transport module.
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Sep  1 00:16:56 etachott kernel: pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+Sep  1 00:16:56 etachott kernel: pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Sep  1 00:16:56 etachott kernel: PCI: CLS 0 bytes, default 64
+Sep  1 00:16:56 etachott kernel: PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Sep  1 00:16:56 etachott kernel: software IO TLB: mapped [mem 0x00000000dbff0000-0x00000000dfff0000] (64MB)
+Sep  1 00:16:56 etachott kernel: RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 335544320 ms ovfl timer
+Sep  1 00:16:56 etachott kernel: clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x325ea4cf831, max_idle_ns: 440795248593 ns
+Sep  1 00:16:56 etachott kernel: clocksource: Switched to clocksource tsc
+Sep  1 00:16:56 etachott kernel: platform rtc_cmos: registered platform RTC device (no PNP device found)
+Sep  1 00:16:56 etachott kernel: Initialise system trusted keyrings
+Sep  1 00:16:56 etachott kernel: workingset: timestamp_bits=40 max_order=22 bucket_order=0
+Sep  1 00:16:56 etachott kernel: NFS: Registering the id_resolver key type
+Sep  1 00:16:56 etachott kernel: Key type id_resolver registered
+Sep  1 00:16:56 etachott kernel: Key type id_legacy registered
+Sep  1 00:16:56 etachott kernel: 9p: Installing v9fs 9p2000 file system support
+Sep  1 00:16:56 etachott kernel: Key type asymmetric registered
+Sep  1 00:16:56 etachott kernel: Asymmetric key parser 'x509' registered
+Sep  1 00:16:56 etachott kernel: Block layer SCSI generic (bsg) driver version 0.4 loaded (major 251)
+Sep  1 00:16:56 etachott kernel: io scheduler mq-deadline registered
+Sep  1 00:16:56 etachott kernel: io scheduler kyber registered
+Sep  1 00:16:56 etachott kernel: ACPI: AC: AC Adapter [AC] (on-line)
+Sep  1 00:16:56 etachott kernel: input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Sep  1 00:16:56 etachott kernel: ACPI: button: Power Button [PWRF]
+Sep  1 00:16:56 etachott kernel: input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Sep  1 00:16:56 etachott kernel: ACPI: button: Sleep Button [SLPF]
+Sep  1 00:16:56 etachott kernel: ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Sep  1 00:16:56 etachott kernel: input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input2
+Sep  1 00:16:56 etachott kernel: Serial: 8250/16550 driver, 4 ports, IRQ sharing enabled
+Sep  1 00:16:56 etachott kernel: Non-volatile memory driver v1.3
+Sep  1 00:16:56 etachott kernel: Linux agpgart interface v0.103
+Sep  1 00:16:56 etachott kernel: ACPI: bus type drm_connector registered
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: vgaarb: deactivate vga console
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] FIFO at 0x00000000f0000000 size is 2048 KiB
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] VRAM at 0x00000000e0000000 size is 16384 KiB
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Running on SVGA version 2.
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Capabilities: rect copy, cursor, cursor bypass, cursor bypass 2, alpha cursor, extended fifo, pitchlock, irq mask, gmr, traces, gmr2, screen object 2, command buffers, gbobject, 
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* vmwgfx seems to be running on an unsupported hypervisor.
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* This configuration is likely broken.
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] *ERROR* Please switch to a supported graphics device to avoid problems.
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] DMA map mode: Caching DMA mappings.
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Legacy memory limits: VRAM = 16384 KiB, FIFO = 2048 KiB, surface = 507904 KiB
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] MOB limits: max mob size = 131072 KiB, max mob pages = 4096
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Max GMR ids is 8192
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Max number of GMR pages is 1048576
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Maximum display memory size is 16384 KiB
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Screen Target display unit initialized
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Using command buffers with DMA pool.
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] Available shader model: Legacy.
+Sep  1 00:16:56 etachott kernel: [drm] Initialized vmwgfx 2.21.0 for 0000:00:02.0 on minor 0
+Sep  1 00:16:56 etachott kernel: fbcon: vmwgfxdrmfb (fb0) is primary device
+Sep  1 00:16:56 etachott kernel: Console: switching to colour frame buffer device 160x50
+Sep  1 00:16:56 etachott kernel: vmwgfx 0000:00:02.0: [drm] fb0: vmwgfxdrmfb frame buffer device
+Sep  1 00:16:56 etachott kernel: loop: module loaded
+Sep  1 00:16:56 etachott kernel: ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Sep  1 00:16:56 etachott kernel: ahci 0000:00:0d.0: AHCI vers 0001.0100, 32 command slots, 3 Gbps, SATA mode
+Sep  1 00:16:56 etachott kernel: ahci 0000:00:0d.0: 1/1 ports implemented (port mask 0x1)
+Sep  1 00:16:56 etachott kernel: ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Sep  1 00:16:56 etachott kernel: scsi host0: ahci
+Sep  1 00:16:56 etachott kernel: ata1: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21 lpm-pol 1
+Sep  1 00:16:56 etachott kernel: scsi host1: ata_piix
+Sep  1 00:16:56 etachott kernel: scsi host2: ata_piix
+Sep  1 00:16:56 etachott kernel: ata2: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14 lpm-pol 0
+Sep  1 00:16:56 etachott kernel: ata3: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15 lpm-pol 0
+Sep  1 00:16:56 etachott kernel: e100: Intel(R) PRO/100 Network Driver
+Sep  1 00:16:56 etachott kernel: e100: Copyright(c) 1999-2006 Intel Corporation
+Sep  1 00:16:56 etachott kernel: e1000: Intel(R) PRO/1000 Network Driver
+Sep  1 00:16:56 etachott kernel: e1000: Copyright (c) 1999-2006 Intel Corporation.
+Sep  1 00:16:56 etachott kernel: ata3.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Sep  1 00:16:57 etachott kernel: ata1: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Sep  1 00:16:57 etachott kernel: ata1.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Sep  1 00:16:57 etachott kernel: ata1.00: 146800640 sectors, multi 128: LBA48 NCQ (depth 32)
+Sep  1 00:16:57 etachott kernel: ata1.00: configured for UDMA/133
+Sep  1 00:16:57 etachott kernel: scsi 0:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Sep  1 00:16:57 etachott kernel: scsi 0:0:0:0: Attached scsi generic sg0 type 0
+Sep  1 00:16:57 etachott kernel: sd 0:0:0:0: [sda] 146800640 512-byte logical blocks: (75.2 GB/70.0 GiB)
+Sep  1 00:16:57 etachott kernel: sd 0:0:0:0: [sda] Write Protect is off
+Sep  1 00:16:57 etachott kernel: sd 0:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Sep  1 00:16:57 etachott kernel: sd 0:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Sep  1 00:16:57 etachott kernel: sd 0:0:0:0: [sda] Preferred minimum I/O size 512 bytes
+Sep  1 00:16:57 etachott kernel: scsi 2:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Sep  1 00:16:57 etachott kernel:  sda: sda1 sda2 sda4 < sda5 sda6 >
+Sep  1 00:16:57 etachott kernel: sr 2:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Sep  1 00:16:57 etachott kernel: cdrom: Uniform CD-ROM driver Revision: 3.20
+Sep  1 00:16:57 etachott kernel: sd 0:0:0:0: [sda] Attached SCSI disk
+Sep  1 00:16:57 etachott kernel: sr 2:0:0:0: Attached scsi CD-ROM sr0
+Sep  1 00:16:57 etachott kernel: sr 2:0:0:0: Attached scsi generic sg1 type 5
+Sep  1 00:16:57 etachott kernel: e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:46:4f:94
+Sep  1 00:16:57 etachott kernel: e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Sep  1 00:16:57 etachott kernel: e1000e: Intel(R) PRO/1000 Network Driver
+Sep  1 00:16:57 etachott kernel: e1000e: Copyright(c) 1999 - 2015 Intel Corporation.
+Sep  1 00:16:57 etachott kernel: sky2: driver version 1.30
+Sep  1 00:16:57 etachott kernel: ehci-pci 0000:00:0b.0: EHCI Host Controller
+Sep  1 00:16:57 etachott kernel: ehci-pci 0000:00:0b.0: new USB bus registered, assigned bus number 1
+Sep  1 00:16:57 etachott kernel: ehci-pci 0000:00:0b.0: irq 19, io mem 0xf0805000
+Sep  1 00:16:57 etachott kernel: ehci-pci 0000:00:0b.0: USB 2.0 started, EHCI 1.00
+Sep  1 00:16:57 etachott kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002, bcdDevice= 6.17
+Sep  1 00:16:57 etachott kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Sep  1 00:16:57 etachott kernel: usb usb1: Product: EHCI Host Controller
+Sep  1 00:16:57 etachott kernel: usb usb1: Manufacturer: Linux 6.17.0-rc4-little-penguin ehci_hcd
+Sep  1 00:16:57 etachott kernel: usb usb1: SerialNumber: 0000:00:0b.0
+Sep  1 00:16:57 etachott kernel: hub 1-0:1.0: USB hub found
+Sep  1 00:16:57 etachott kernel: hub 1-0:1.0: 12 ports detected
+Sep  1 00:16:57 etachott kernel: ohci-pci 0000:00:06.0: OHCI PCI host controller
+Sep  1 00:16:57 etachott kernel: ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 2
+Sep  1 00:16:57 etachott kernel: ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Sep  1 00:16:57 etachott kernel: usb usb2: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 6.17
+Sep  1 00:16:57 etachott kernel: usb usb2: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Sep  1 00:16:57 etachott kernel: usb usb2: Product: OHCI PCI host controller
+Sep  1 00:16:57 etachott kernel: usb usb2: Manufacturer: Linux 6.17.0-rc4-little-penguin ohci_hcd
+Sep  1 00:16:57 etachott kernel: usb usb2: SerialNumber: 0000:00:06.0
+Sep  1 00:16:57 etachott kernel: hub 2-0:1.0: USB hub found
+Sep  1 00:16:57 etachott kernel: hub 2-0:1.0: 12 ports detected
+Sep  1 00:16:57 etachott kernel: usbcore: registered new interface driver usblp
+Sep  1 00:16:57 etachott kernel: usbcore: registered new interface driver usb-storage
+Sep  1 00:16:57 etachott kernel: i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Sep  1 00:16:57 etachott kernel: serio: i8042 KBD port at 0x60,0x64 irq 1
+Sep  1 00:16:57 etachott kernel: serio: i8042 AUX port at 0x60,0x64 irq 12
+Sep  1 00:16:57 etachott kernel: input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input3
+Sep  1 00:16:57 etachott kernel: rtc_cmos rtc_cmos: registered as rtc0
+Sep  1 00:16:57 etachott kernel: rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Sep  1 00:16:57 etachott kernel: device-mapper: ioctl: 4.50.0-ioctl (2025-04-28) initialised: dm-devel@lists.linux.dev
+Sep  1 00:16:57 etachott kernel: intel_pstate: CPU model not supported
+Sep  1 00:16:57 etachott kernel: hid: raw HID events driver (C) Jiri Kosina
+Sep  1 00:16:57 etachott kernel: usbcore: registered new interface driver usbhid
+Sep  1 00:16:57 etachott kernel: usbhid: USB HID core driver
+Sep  1 00:16:57 etachott kernel: Initializing XFRM netlink socket
+Sep  1 00:16:57 etachott kernel: NET: Registered PF_INET6 protocol family
+Sep  1 00:16:57 etachott kernel: Segment Routing with IPv6
+Sep  1 00:16:57 etachott kernel: In-situ OAM (IOAM) with IPv6
+Sep  1 00:16:57 etachott kernel: sit: IPv6, IPv4 and MPLS over IPv4 tunneling driver
+Sep  1 00:16:57 etachott kernel: NET: Registered PF_PACKET protocol family
+Sep  1 00:16:57 etachott kernel: 9pnet: Installing 9P2000 support
+Sep  1 00:16:57 etachott kernel: Key type dns_resolver registered
+Sep  1 00:16:57 etachott kernel: IPI shorthand broadcast: enabled
+Sep  1 00:16:57 etachott kernel: sched_clock: Marking stable (1414702437, 6245137)->(1468916790, -47969216)
+Sep  1 00:16:57 etachott kernel: registered taskstats version 1
+Sep  1 00:16:57 etachott kernel: Loading compiled-in X.509 certificates
+Sep  1 00:16:57 etachott kernel: Demotion targets for Node 0: null
+Sep  1 00:16:57 etachott kernel: PM:   Magic number: 9:128:259
+Sep  1 00:16:57 etachott kernel: netconsole: network logging started
+Sep  1 00:16:57 etachott kernel: cfg80211: Loading compiled-in X.509 certificates for regulatory database
+Sep  1 00:16:57 etachott kernel: kworker/u52:0 (149) used greatest stack depth: 13944 bytes left
+Sep  1 00:16:57 etachott kernel: Loaded X.509 cert 'sforshee: 00b28ddf47aef9cea7'
+Sep  1 00:16:57 etachott kernel: Loaded X.509 cert 'wens: 61c038651aabdcf94bd0ac7ff06c7248db18c600'
+Sep  1 00:16:57 etachott kernel: ALSA device list:
+Sep  1 00:16:57 etachott kernel:   No soundcards found.
+Sep  1 00:16:57 etachott kernel: check access for rdinit=/init failed: -2, ignoring
+Sep  1 00:16:57 etachott kernel: faux_driver regulatory: Direct firmware load for regulatory.db failed with error -2
+Sep  1 00:16:57 etachott kernel: cfg80211: failed to load regulatory.db
+Sep  1 00:16:57 etachott kernel: input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input5
+Sep  1 00:16:57 etachott kernel: md: Waiting for all devices to be available before autodetect
+Sep  1 00:16:57 etachott kernel: md: If you don't use raid, use raid=noautodetect
+Sep  1 00:16:57 etachott kernel: md: Autodetecting RAID arrays.
+Sep  1 00:16:57 etachott kernel: md: autorun ...
+Sep  1 00:16:57 etachott kernel: md: ... autorun DONE.
+Sep  1 00:16:57 etachott kernel: EXT4-fs (sda5): orphan cleanup on readonly fs
+Sep  1 00:16:57 etachott kernel: EXT4-fs (sda5): mounted filesystem 4f9d73de-5954-4569-8a50-8dc7af13080c ro with ordered data mode. Quota mode: none.
+Sep  1 00:16:57 etachott kernel: VFS: Mounted root (ext4 filesystem) readonly on device 8:5.
+Sep  1 00:16:57 etachott kernel: devtmpfs: mounted
+Sep  1 00:16:57 etachott kernel: Freeing unused kernel image (initmem) memory: 2836K
+Sep  1 00:16:57 etachott kernel: Write protecting the kernel read-only data: 28672k
+Sep  1 00:16:57 etachott kernel: Freeing unused kernel image (text/rodata gap) memory: 1528K
+Sep  1 00:16:57 etachott kernel: Freeing unused kernel image (rodata/data gap) memory: 660K
+Sep  1 00:16:57 etachott kernel: x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Sep  1 00:16:57 etachott kernel: Run /sbin/init as init process
+Sep  1 00:16:57 etachott kernel:   with arguments:
+Sep  1 00:16:57 etachott kernel:     /sbin/init
+Sep  1 00:16:57 etachott kernel:   with environment:
+Sep  1 00:16:57 etachott kernel:     HOME=/
+Sep  1 00:16:57 etachott kernel:     TERM=linux
+Sep  1 00:16:57 etachott kernel:     BOOT_IMAGE=/vmlinuz-6.17.0-rc4-test-kernel
+Sep  1 00:16:57 etachott kernel: stty (160) used greatest stack depth: 12800 bytes left
+Sep  1 00:16:57 etachott kernel: dmesg (163) used greatest stack depth: 12592 bytes left
+Sep  1 00:16:57 etachott kernel: ls (166) used greatest stack depth: 12512 bytes left
+Sep  1 00:16:57 etachott kernel: usb 2-1: new full-speed USB device number 2 using ohci-pci
+Sep  1 00:16:57 etachott kernel: e1000 0000:00:03.0 enp0s3: renamed from eth0
+Sep  1 00:16:58 etachott kernel: usb 2-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Sep  1 00:16:58 etachott kernel: usb 2-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Sep  1 00:16:58 etachott kernel: usb 2-1: Product: USB Tablet
+Sep  1 00:16:58 etachott kernel: usb 2-1: Manufacturer: VirtualBox
+Sep  1 00:16:58 etachott kernel: input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb2/2-1/2-1:1.0/0003:80EE:0021.0001/input/input6
+Sep  1 00:16:58 etachott kernel: hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Sep  1 00:16:59 etachott kernel: clocksource: Long readout interval, skipping watchdog check: cs_nsec: 1041662357 wd_nsec: 1041662034
+Sep  1 00:17:02 etachott kernel: Adding 10351612k swap on /dev/sda6.  Priority:1 extents:1 across:10351612k 
+Sep  1 00:17:02 etachott kernel: EXT4-fs (sda5): re-mounted 4f9d73de-5954-4569-8a50-8dc7af13080c.
+Sep  1 00:17:02 etachott kernel: EXT4-fs (sda5): re-mounted 4f9d73de-5954-4569-8a50-8dc7af13080c r/w.
+Sep  1 00:17:02 etachott kernel: FAT-fs (sda1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Sep  1 00:17:02 etachott kernel: EXT4-fs (sda2): mounted filesystem 59c3113a-9174-4d91-a45c-30f4478f5d45 r/w with ordered data mode. Quota mode: none.
+Sep  1 00:17:03 etachott kernel: rc (159) used greatest stack depth: 12360 bytes left
+Sep  1 00:17:04 etachott kernel: e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
