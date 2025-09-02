@@ -1,0 +1,29 @@
+From d6d8a33dd55e6fa6702d320b2a540ebaa2b61f66 Mon Sep 17 00:00:00 2001
+From: Eduardo Tachotte <etachott@student.42sp.org.br>
+Date: Tue, 2 Sep 2025 09:57:18 -0300
+Subject: [PATCH] Makefile: update EXTRAVERSION for little-penguin
+
+This changes the kernel EXTRAVERSION string from "-rc4" to
+"-thor__kernel" as part of the project little-penguin.
+
+Signed-off-by: Eduardo Tachotte <etachott@student.42sp.org.br>
+---
+ Makefile | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index b9c661913..82572f4a9 100644
+--- a/Makefile
++++ b/Makefile
+@@ -2,7 +2,7 @@
+ VERSION = 6
+ PATCHLEVEL = 17
+ SUBLEVEL = 0
+-EXTRAVERSION = -rc4
++EXTRAVERSION = -thor__kernel
+ NAME = Baby Opossum Posse
+ 
+ # *DOCUMENTATION*
+-- 
+2.48.1
+
